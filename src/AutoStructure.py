@@ -10,9 +10,6 @@ from os import listdir, getcwd, mkdir
 from os.path import isfile, join
 import subprocess
 
-
-
-
 class Organizer:
     """
     version 0.1 :
@@ -151,7 +148,6 @@ class Organizer:
                 if ExtensionName in File:
                     FullFolderPath = join(getcwd(),FolderName)
                     print(f" -- Moving {File} to {FullFolderPath}")
-                    time.sleep(5)
                     self.__MoveFile(File, FullFolderPath)
 
     def MainLoop(self):
